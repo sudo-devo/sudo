@@ -28,7 +28,7 @@ flightRouter.post("/flights", async (req, res) => {
   }
 });
 
-flightRouter.patch("flights/:id", async (req, res) => {
+flightRouter.patch("/flights/:id", async (req, res) => {
   const payload = req.body;
   const id = req.params.id;
   try {
@@ -39,7 +39,7 @@ flightRouter.patch("flights/:id", async (req, res) => {
   }
 });
 
-flightRouter.delete("flights/:id", async (req, res) => {
+flightRouter.delete("/flights/:id", async (req, res) => {
   const id = req.params.id;
 
   try {
